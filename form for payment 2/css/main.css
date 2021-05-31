@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 10px;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 30px;
+	line-height: normal;
+}
+
+div.headings{
+	display: flex;
+	line-height: normal;
+	margin: auto;
+	font-size: 18px;
+	text-align: left;
+	max-width: 610px;
+	border-bottom: groove;
+}
+
+.caption {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: normal;
+	margin: auto;
+	max-width: 610px;
+	font-size: 16px
+}
+
+.block-basket-item {
+	margin-bottom: 10px;
+}
+
+.block,
+.block-receiver,
+.block-shipment {
+	background: whitesmoke;
+	height:auto;
+	width: 95%;
+	max-width: 600px;
+	border-radius: 10px;
+	margin: 20px auto 0;
+	padding: 15px 5px 2px 15px;
+}
+
+.block-receiver,
+.block-shipment {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block-comment {
+	margin: 0 10px 0 0;
+}
+
+.block-wrapper {
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.organisation {
+	line-height: normal;
+}
+
+.date,
+.time,
+input[type="radio"] {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+	background-color: #fff;
+	vertical-align: top;
+	outline: none;
+	padding: 0;
+	height: 35px;
+	line-height: 40px;
+	text-indent: 10px;
+	display: inline-block;
+	width: 160px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 15px 4px
+	rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	outline: 2px solid mediumpurple;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+textarea {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 10px;
+	resize: none;
+	background-color: #fff;
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 15px 4px
+	rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.radio-block {
+	display: flex;
+	margin: 10px 0 20px 10px;
+	line-height: normal;
+}
+
+.label-payment {
+	display: inline-flex;
+	line-height: normal;
+	align-items: center;
+	vertical-align:middle;
+	margin: -1px 0 0 5px;
+}
+
+.button {
+	display: flex;
+	cursor: pointer;
+	border: 2px solid lightgray;
+	outline: none;
+	background-color: whitesmoke;
+	font-size: 14px;
+	color: black;
+	border-radius: 10px;
+	padding: 8px 18px 8px 18px;
+	margin-top: 20px;
+	flex-basis: 0;
+}
+
+.button-block {
+	display: flex;
+	justify-content: center;
+}
+
+.form-input.error {
+	box-shadow: 0 0 15px 4px red;
+}
+
+footer {
+	padding-bottom: 60px;
+
+}

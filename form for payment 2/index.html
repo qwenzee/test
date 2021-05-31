@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/ac17086f01.js" crossorigin="anonymous"></script>
+  <script src="javascript/js.js"></script>
+  <title>Оформления заказа</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="img/wallet.svg" type="image/x-icon">
+</head>
+<body>
+<h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1><br>
+
+<form action="#" id="form">
+  <div class="product_info">
+    <div class="headings"><h3><i class="fas fa-shopping-cart" style="font-size:18px;"></i> &nbspТовары в заказе</h3></div>
+    <div class="block">
+      <div class="block-basket-item">
+        <div class="basket-item-name">
+          <div class="caption">Наименование:</div>
+        </div>
+
+        <div class="basket-item-weight">
+          <div class="caption">Вес/объём:</div>
+        </div>
+
+        <div class="basket-item-count">
+          <div class="caption">Количество:</div>
+        </div>
+
+        <div class="basket-item-price">
+          <div class="caption">Итого:</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="receiver">
+    <div class="headings"><h3><i class="fas fa-address-card" style="font-size:18px;"></i> &nbspПолучатель</h3></div>
+    <form action="index.html" method="post">
+      <div class="block-receiver">
+        <div class="block-wrapper">
+          <label><b>Имя *</b></label><p>
+          <input type="text" name="first-name" autocomplete="on" class="form-input _req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Телефон *</b></label><p>
+          <input type="number" placeholder="+375 (__) ___-__-__" name="phone_number" autocomplete="on" class="form-input _req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Фамилия *</b></label><p>
+          <input type="text" name="second-name" autocomplete="on" class="form-input _req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>E-mail *</b></label><p>
+          <input type="email" name="email" autocomplete="on" class="form-input _ email _req">
+        </div>
+        <div class="block-wrapper">
+          <label class="organisation"><b>Организация <br>(для юр.лиц)</b></label><p>
+          <input type="text" name="organisation">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="shipment">
+    <div class="headings"><h3><i class="fas fa-truck" style="font-size:18px;"></i> &nbspДоставка</h3></div>
+    <form action="index.html" method="post">
+      <div class="block-shipment">
+        <div class="block-wrapper">
+          <label><b>Город *</b></label><p>
+          <input type="text" name="city" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Улица *</b></label><p>
+          <input type="text" name="street" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Дата доставки *</b></label><p>
+          <input type="date" name="date" class="date" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Время доставки *</b></label><p>
+          <input type="time" name="time" class="time" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Дом *</b></label><p>
+          <input type="text" name="house" size="4" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Корпус</b></label><p>
+          <input type="text" name="corp" size="4">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Квартира *</b></label><p>
+          <input type="text" name="flat" size="4" class="_req">
+        </div>
+        <div class="block-wrapper">
+          <label><b>Этаж</b></label><p>
+          <input type="text" size="4" name="floor">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="comment">
+    <div class="headings"><h3><i class="fas fa-comment" style="font-size:18px;"></i> &nbspКомментарий</h3></div>
+    <div class="block">
+      <div class="block-comment">
+        <form action="index.html" method="post">
+          <label><textarea name="comment" spellcheck="false"></textarea></label>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment">
+    <div class="headings"><h3><i class="fas fas fa-wallet" style="font-size:18px;"></i> &nbspОплата</h3></div>
+    <div class="block">
+      <div class="radio-block">
+        <input id="payment" type="radio" name="state" value="https://yandex.by/">
+        <label for="payment" class="label-payment"><span>Оплата через систему "Расчёт" (ЕРИП)</span></label>
+      </div>
+
+      <div class="radio-block">
+        <input id="payment-legal" type="radio" name="state" value="https://www.google.by/">
+        <label for="payment-legal" class="label-payment"><span>Оплата по безналичному расчету (юр.лица)</span></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-block">
+    <form  action="#" method="get" id="button">
+      <button class="button" name="order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+    </form>
+  </div>
+</form>
+<footer></footer>
+
+</body>
+</html>
